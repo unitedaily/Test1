@@ -1,13 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Watch Stream</title>
+  <title>Mobile Stream</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: black;
+      color: red;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    .warning {
+      position: absolute;
+      z-index: 9999;
+      background-color: yellow;
+      color: red;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      padding: 10px 0;
+    }
+    #player {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 50px);
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Click below to watch the stream</h1>
-  <a href="https://veplay.top/stream/2f83d064-3874-4b2b-bfd7-d3a4b7c71594" target="_blank">
-    Watch Now
-  </a>
+  <div class="warning">
+    ⚠️ USE AD BLOCKER – MOBILE USE ONLY!!!
+  </div>
+
+  <iframe id="player" 
+          src="https://veplay.top/stream/ce9425f6-33e5-4cc9-94b2-0489a228f4a0" 
+          scrolling="no" 
+          allowfullscreen="yes" 
+          allow="encrypted-media; picture-in-picture;" 
+          frameborder="0">
+  </iframe>
 </body>
 </html>
